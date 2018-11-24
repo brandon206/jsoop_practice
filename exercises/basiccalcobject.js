@@ -6,7 +6,6 @@ class Calculator{
 		this.number2 = null;
 		//takes in nothing
 		//make storage for the operator and the numbers
-		}
 	loadOperator( operator ){
 		if( operator === "+" || operator === "-" || operator === "*" || operator === "/"){
 			this.operator = operator;
