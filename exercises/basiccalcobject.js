@@ -1,10 +1,20 @@
 
 class Calculator{
 	constructor(){
+		this.operator = "";
+		this.number1 = null;
+		this.number2 = null;
 		//takes in nothing
 		//make storage for the operator and the numbers
 	}
-	loadOperator(  ){
+	loadOperator( operator ){
+		if( operator === "+" || operator === "-" || operator === "*" || operator === "/"){
+			this.operator = operator;
+			return true;
+		}
+		else{
+			return false;
+		}
 		//adds the operator to the next calculation
 		//takes in the operator
 		//checks if it is a valid operation (+-*/)
